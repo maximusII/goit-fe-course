@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+/* For elements with box-sizing: content-box */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* For correct work of imagies with links inside */
+
+
+/* Body CSS */
+
+.container {
+    width: 900px;
+    margin: 0 auto; 
+}
+
+
+/* Header CSS */
+
+.nav {
+    display: inline-block;
+    width: 900px;
+    height: 192px;
+    text-align: center;
+    padding-top: 78px;
+    padding-bottom: 104px;
+    
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #626262; 
+}
+
+.nav a:focus,
+.nav a:hover {
+    color: #68cbf8;
+}
+
+.lifestyle {
+    margin-right: 122px;
+}
+
+.photodiary {
+    margin-right: 102px;
+}
+
+.music {
+    margin-right: 94px;
+}
+
+
+
+/* Main CSS */
+
+.section {
+    margin: 0;
+    padding: 0;
+    font-size: 0; 
+    /* Instead of -4px(1/4 from font size, 14px default font size) for inline-block's margin-right or left */
+    
+}
+
+.article {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    margin-bottom: 129px;
+}
+
+.article:nth-child(2n) {
+    margin-right: 0;
+}
+
+.article:nth-last-child(-n+2) {
+    margin-bottom: 52px; 
+    /* to button */
+}
+
+.article h2 {
+    font-size: 30pt;
+    margin-bottom: 36px;
+    font-weight: 100;
+    color: #626262;
+}
+
+.article p {
+    font-size: 14pt;
+    font-weight: 100;
+}
+
+.article-title {
+    color: #c7c1b6;
+    margin-bottom: 31px;
+    margin-top: 30px;
+}
+
+.article-text {
+    line-height: 24pt;
+    color: #626262;
+}
+
+/* Button */
+.button {
+    display: block;
+    border: none;
+    margin: auto;
+    padding: 0;
+    width: 165px;
+    height: 60px;
+    border: 1px solid black;
+    font-size: 20pt;
+    line-height: 24pt;
+    background-color: white;
+    cursor: pointer;
+}
