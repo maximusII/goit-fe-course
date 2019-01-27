@@ -12,14 +12,15 @@ img {
     max-width: 100%;
     height: auto;
 }
-/* For correct work of imagies with links inside */
+/* For correct work of imagies with links inside(from video) */
 
 
 /* Body CSS */
 
 .container {
     width: 900px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    /* width from PS (Photoshop) */
 }
 
 
@@ -32,7 +33,7 @@ img {
     text-align: center;
     padding-top: 78px;
     padding-bottom: 104px;
-    
+    /* width, height, paddings from PS */
 }
 
 .nav a {
@@ -58,6 +59,7 @@ img {
 .music {
     margin-right: 94px;
 }
+/* all margins right from PS */
 
 
 
@@ -67,7 +69,7 @@ img {
     margin: 0;
     padding: 0;
     font-size: 0; 
-    /* Instead of -4px(1/4 from font size, 14px default font size) for inline-block's margin-right or left */
+    /* font size instead of -4px(1/4 from font size, 14 or 16px default font size) for inline-block's margin-right or left */
     
 }
 
@@ -75,48 +77,53 @@ img {
     display: inline-block;
     width: 420px;
     margin-right: 60px;
-    margin-bottom: 129px;
+    margin-bottom: 128px;
+    /* 134px margin-bottom in photoshop - 5px (line height-font size = 10px/2) than make even*/
 }
 
 .article:nth-child(2n) {
     margin-right: 0;
 }
+/* every second  article doesn't need margin right*/
 
 .article:nth-last-child(-n+2) {
     margin-bottom: 52px; 
-    /* to button */
+    /* margin to button 58px-5px(1/2 line height-font size), than even*/
 }
 
 .article h2 {
-    font-size: 30pt;
+    font-size: 30px;
     margin-bottom: 36px;
     font-weight: 100;
     color: #626262;
+    /* margin bottom 44px-3px-5px (margin in PS - 1/2 line height-font size) */
 }
 
 .article p {
-    font-size: 14pt;
+    font-size: 14px;
     font-weight: 100;
 }
 
 .article-title {
     color: #c7c1b6;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
     margin-top: 30px;
+    /* margings calculation is the same as above */
 }
 
 .article-text {
-    line-height: 24pt;
+    line-height: 24px;
     color: #626262;
 }
+/* line height from PS */
+
 
 /* Button */
 .button {
     display: block;
-    border: none;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
-    width: 165px;
+    width: 164px;
     height: 60px;
     border: 1px solid black;
     font-size: 20pt;
@@ -124,4 +131,6 @@ img {
     background-color: white;
     cursor: pointer;
     color:#626262;
+    margin-bottom: 72px;
 }
+/* Why font-family is different from other elements on page? */
