@@ -31,9 +31,9 @@ img {
     width: 900px;
     height: 192px;
     text-align: center;
-    padding-top: 78px;
-    padding-bottom: 104px;
-    /* width, height, paddings from PS */
+    line-height: 192px;
+    /* for ".nav a" vertical-align: middle */
+    /* width, height from PS */
 }
 
 .nav a {
@@ -41,6 +41,9 @@ img {
     text-decoration: none;
     text-transform: uppercase; 
     color: #626262; 
+    margin: 0 50px;
+    /* for same horizontal gaps between nav items = 50px */
+    vertical-align: middle;
 }
 
 .nav a:focus,
@@ -48,7 +51,7 @@ img {
     color: #68cbf8;
 }
 
-.lifestyle {
+/* .lifestyle {
     margin-right: 122px;
 }
 
@@ -58,7 +61,7 @@ img {
 
 .music {
     margin-right: 94px;
-}
+} */
 /* all margins right from PS */
 
 
