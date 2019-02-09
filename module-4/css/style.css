@@ -36,15 +36,16 @@ img {
     font-size: 12px;
     width: 464px;
     float: right; 
+    text-align: center;
 }
 
 .site-nav li {
     float: left;
 }
 
-.site-nav li:not(:last-child) {
+/* .site-nav li:not(:last-child) {
     margin-right: 40px;
-}
+} */
 
 .site-nav li a {
     text-decoration: none;
@@ -52,6 +53,7 @@ img {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: black;
+    margin: 0 10px;
 }
 
 .site-nav li a:hover, 
