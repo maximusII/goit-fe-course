@@ -177,7 +177,7 @@ li {
 .card {
     display: flex;
     justify-content: space-between;
-    height: 626px;
+    margin-bottom: 88px;
 }
 
 .photo {
