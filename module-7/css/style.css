@@ -1,0 +1,201 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 75%;
+}
+
+.logo {
+    width: 82px;
+    position: relative;
+    top: 8px;
+    left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+nav a:not(:last-child) {
+    margin-right: 38px;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #fed136;   
+}
+
+.services {
+    padding-top: 112px;
+    padding-bottom: 102px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.sub-title {
+    font-family: Dr;
+    font-weight: 400;
+    font-size: 16px;
+    color: grey;
+}
+
+li {
+    list-style-type: none;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 290px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    margin-top: 38px;
+}
+
+.card img {
+    width: 72px;
+    height: 72px;
+}
+
+.card-title, input[type="submit"] {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.card-text {
+    font-family: Roboto;
+    font-size: 14px;
+    color: grey;
+}
+
+.contact {
+    padding-top: 110px;
+    background-color: #000;
+}
+
+.title, .sub-title {
+    text-align: center;
+}
+
+.title {
+    color: #fff;
+
+}
+
+.bottom {
+    position: relative;
+    height: 564px;
+}
+
+.bottom img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.form p {
+    padding-bottom: 76px;
+} 
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="email"] {
+    width: 456px;
+    height: 52px;
+    padding-left: 20px;
+
+} 
+
+input[type="submit"] {
+    display: block;
+    margin: 30px auto;
+    background-color: rgb(254, 209, 54);
+    width: 240px;
+    height: 68px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgb(254, 209, 54);
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wrapper-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.wrapper-inputs, .wrapper-textarea {
+    width: 456px;
+    height: 214px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    cursor: text;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+#name-input:valid,
+#e-mail-input:valid,
+#message:valid {
+    outline: 2px solid green;
+}
+
+#name-input:invalid,
+#e-mail-input:invalid,
+#message:invalid {
+    outline: 2px solid red;
+}
