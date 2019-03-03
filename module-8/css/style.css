@@ -20,7 +20,7 @@ img {
 }
 
 .wrapper {
-  background-image: url(/Homeworks/goit-fe-course/module-8/img/Photo-mobile.png);
+  background-image: url(../img/Photo-mobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -197,7 +197,7 @@ main {
 
 @media (min-width: 748px) {
   .wrapper {
-    background-image: url(/Homeworks/goit-fe-course/module-8/img/Photo-tablet.png);
+    background-image: url(../img/Photo-tablet.png);
     background-color: rgba(0, 0, 0, 0.5);
   }
 
@@ -281,7 +281,7 @@ main {
 
 @media (min-width: 940px) {
   .wrapper {
-    background-image: url(/Homeworks/goit-fe-course/module-8/img/Photo-PC.png);
+    background-image: url(../img/Photo-PC.png);
   }
 
   .container {
