@@ -25,15 +25,12 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 138px;
 }
 
 .container {
   min-width: 320px;
   margin: 0 auto;
-}
-
-.header {
-  height: 540px;
 }
 
 .nav {
@@ -199,14 +196,11 @@ main {
   .wrapper {
     background-image: url(../img/Photo-tablet.png);
     background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 232px;
   }
 
   .container {
     min-width: 748px;
-  }
-
-  .header {
-    height: 700px;
   }
 
   .wrapper-top {
