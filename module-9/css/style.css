@@ -1,0 +1,305 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  background-image: url(../img/Photo-mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav {
+  padding: 32px 0 64px;
+}
+
+.log-sign {
+  margin: 0 auto;
+}
+
+.nav a,
+.header h2,
+.text, 
+.button-header a,
+.logo a  {
+  color: #fff;
+}
+
+.nav a {
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover,
+nav a:focus {
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+
+.nav a,
+.header h2,
+.logo,
+.button,
+.people-title,
+.people-name {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.header h2,
+.logo {
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 20px;
+  position: absolute;
+  top: 165px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header h2 {
+  font-size: 30px;
+  padding-top: 102px;
+}
+
+.text {
+  font-size: 18px;
+  padding: 0 58px;
+}
+
+.text,
+.people-about {
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.button {
+  font-size: 14px;
+  border: 2px solid #ff4e50;
+  border-radius: 25px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.button-header a,
+.logo a {
+  text-decoration: none;
+}
+
+.button-header {
+  background-color: #ff4e50;
+}
+
+.button-bottom {
+  background-color: transparent;
+  margin: 0 auto 58px;
+}
+
+.button-header,
+.button-bottom {
+  width: 280px;
+}
+
+.button-bottom a {
+  color: #ff4e50;
+  text-decoration: none;
+}
+
+.people-title {
+  font-size: 22px;
+  padding: 66px 0 6px;
+}
+
+.people-photos {
+  position: relative;
+  display: inline-block;
+}
+
+.man-photo {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icons {
+  position: absolute;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(+70%);
+  padding: 6px;
+}
+
+.icon1 {
+  background-color: #ff4e50;
+}
+
+.icon2 {
+  background-color: #ffa507;
+}
+
+.icon3 {
+  background-color: #1cd7ad;
+}
+
+.icon4 {
+  background-color: #4e73db;
+}
+
+.people-name {
+  font-size: 14px;
+  padding-top: 14px;
+}
+
+.people-about {
+  font-size: 12px;
+  max-width: 226px;
+  margin: 0 auto;
+  padding-bottom: 14px;
+  color: grey;
+}
+
+.header,
+.nav,
+main {
+  text-align: center;
+}
+
+.card {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    background-image: url(../img/Photo-tablet.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 700px;
+  }
+
+  .wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    height: 114px;
+    align-items: center;
+  }
+
+  .container {
+    min-width: 748px;
+  }
+
+  .logo {
+    position: relative;
+    top: 0px;
+    left: 40px;
+    transform: translateX(0);
+  }
+
+  .nav {
+    padding: 0 50px;
+  }
+
+  .header h2 {
+    font-size: 51px;
+    padding: 100px 0 0;
+  }
+
+  .text {
+    font-size: 23px; 
+    padding: 16px 0;
+  }
+
+  .button-header {
+    width: 234px;
+  }
+
+  .people-title {
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 70px 0 25px;
+  }
+
+  .people-about {
+    padding-bottom: 46px;
+  }
+
+  .card2 {
+    order: 2;
+  }
+
+  .card3 {
+    order: 1;
+  }
+
+  .card4 {
+    order: 3;
+  }
+
+  .button-bottom {
+    width: 192px;
+    margin: 0 auto 42px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    background-image: url(../img/Photo-PC.png);
+  }
+
+  .container {
+    min-width: 940px;
+  }
+
+  .logo {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .wrapper-top {
+    max-width: 942px;
+    margin: 0 auto;
+  }
+
+  .people-about {
+    padding-bottom: 36px;
+  }
+
+  .button-bottom {
+    margin: 0 auto 72px;
+  }
+}
