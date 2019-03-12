@@ -133,9 +133,13 @@ nav a:focus {
   text-decoration: none;
 }
 
+.container-main {
+  padding-top: 66px;
+}
+
 .people-title {
   font-size: 22px;
-  padding: 66px 0 6px;
+  padding-bottom: 6px;
 }
 
 .people-photos {
@@ -242,11 +246,15 @@ main {
     width: 234px;
   }
 
+  .container-main {
+    padding-top: 70px;
+  }
+
   .people-title {
     font-family: Montserrat;
     font-size: 19px;
     font-weight: 700;
-    padding: 70px 0 25px;
+    padding-bottom: 25px;
   }
 
   .people-about {
