@@ -1,0 +1,400 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper__header {
+  background-image: url(../img/Eagle.png);
+  width: auto;
+  min-height: 987px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper__gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(239, 214, 136, 0.9), rgba(230, 131, 130, 0.9));
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-bottom: 149px;
+}
+
+.wrapper__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo, 
+.header__title, 
+.header__text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.text__align--center {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 616px;
+  padding-right: 128px;
+}
+
+.menu__item, .logo__link, .footer__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu__item, .logo__link {
+  color: #fff;
+}
+
+.logo__link {
+  font-size: 30px;
+}
+
+.font__montserrat--700 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font__montserrat--400 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menu, .services-card__title {
+  font-size: 14px;
+}
+
+.menu__item:hover {
+  border-bottom: 2px solid #fce38a;
+  color: #fce38a;
+}
+
+.menu::after, .menu::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+.menu::after {
+  content: url(../img/SHOPPING\ CART.png);
+  left: calc(100% - 76px);
+}
+
+.menu::before {
+  content: url(../img/MAGNIFYING\ GLASS.png);
+  left: calc(100% - 16px);
+}
+
+.text__transform--upper {
+  text-transform: uppercase;
+}
+
+.font__kaushan--400 {
+  font-family: Kaushan;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header__title {
+  font-size: 72px;
+}
+
+.header__text {
+  font-size: 142px;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.button {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button__header {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  height: 40px;
+  margin: 99px auto 0;
+  border: 3px solid #fff;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 14px;
+}
+
+.services {
+  padding-top: 46px;
+}
+
+.service__title, .team__title {
+  font-size: 24px;
+  padding-bottom: 13px;
+}
+
+.service__text, .team__text {
+  font-size: 30px;
+}
+
+.service__text::after,
+.team__text::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 4px;
+  background: #f38181;
+}
+
+.service__text::after {
+  margin: 36px auto 63px;
+}
+
+.team__text::after {
+  margin: 36px auto 43px;
+}
+
+.wrapper__services-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 247px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.services-card {
+  width: 380px;
+  padding-left: 80px;
+  position: relative;
+}
+
+.services-card::before {
+  position: absolute;
+  top: 0;
+  left: 21px;
+}
+
+.service-card__icon--photo::before {
+  content: url(../img/ALARM-icon.png)
+}
+
+.service-card__icon--design::before {
+  content: url(../img/LINE-GRAPH-icon.png)
+}
+
+.service-card__icon--creativity::before {
+  content: url(../img/COMPUTER-icon.png)
+}
+
+.service-card__icon--seo::before {
+  content: url(../img/BOOK-icon.png)
+}
+
+.service-card__icon--html::before {
+  content: url(../img/HOME-icon.png)
+}
+
+.service-card__icon--digital::before {
+  content: url(../img/IMAGE-icon.png)
+}
+
+.services-card__text,
+.team__description {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.services-card__text {
+  padding-top: 13px;
+}
+
+.team {
+  padding-top: 87px;
+}
+
+.team__description {
+  padding: 0 90px 86px;
+}
+
+.cards, .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__figure {
+  padding-bottom: 29px;
+}
+
+.card__figure, .card__img {
+  position: relative;
+}
+
+.card__figure:hover .card__gradient,
+.card__figure:hover img {
+  top: -10px;
+  left: -10px;
+  z-index: 1;
+}
+
+.card__figure:hover .card__gradient {
+  background-image: linear-gradient(rgba(239, 138, 138, 0.8), rgba(238, 214, 134, 0.8));
+  z-index: 2;
+}
+
+.card__figure:hover .card__icons {
+  opacity: 1;
+}
+
+.card__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+}
+
+.card__gradient {
+  width: 380px;
+  height: 471px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgb(239, 138, 138), rgb(238, 214, 134));
+}
+
+.card__icons {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-54%, -93%);
+  z-index: 3;
+  opacity: 0;
+}
+
+.card__icon {
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__icon--svg {
+  display: block;
+  width: 50%;
+  height: 50%;
+  fill: #f38181;
+}
+
+.card__icon:hover svg {
+  fill: #fff;
+}
+
+.card__icon:hover {
+  fill: #fff;
+  background-color: #f38181;
+}
+
+.card__title {
+  font-size: 14px;
+  padding-bottom: 11px;
+}
+
+.card__text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+  padding-bottom: 82px;
+}
+
+.footer {
+  border-top: 1px solid #a6a6a6;
+}
+
+.footer__link {
+  color: #f38181;
+}
+
+.footer__text{
+  font-size: 14px;
+}
+
+.footer {
+  min-height: 61px;
+  align-items: center;
+}
+
+.button__footer {
+  border: none;
+  background: #95e1d3;
+  width: 149px;
+  height: 40px;
+  font-size: 14px;
+}
+
+input {
+  height: 40px;
+  width: 226px;
+  border: 1px solid #a6a6a6;
+  border-right: none;
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 15px;
+  padding-left: 9px;
+  margin-right: -4px;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .wrapper__header {
+    background-image: url(../img/Eagle@2x.png);
+  }
+}
