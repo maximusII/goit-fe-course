@@ -514,12 +514,12 @@ img {
 }
 
 .menu::after {
-  content: url(../../images/SHOPPING-CART.png);
+  content: url(../images/SHOPPING-CART.png);
   left: calc(100% - 76px);
 }
 
 .menu::before {
-  content: url(../../images/MAGNIFYING-GLASS.png);
+  content: url(../images/MAGNIFYING-GLASS.png);
   left: calc(100% - 16px);
 }
 
