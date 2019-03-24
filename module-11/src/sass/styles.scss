@@ -1,0 +1,24 @@
+/*
+   Import partials below
+*/
+@import 'fonts';
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'normalize';
+@import 'base';
+
+// components
+@import 'components/wrapper';
+@import 'components/container';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/menu';
+@import 'components/links';
+@import 'components/font';
+@import 'components/text';
+@import 'components/services-card';
+@import 'components/button';
+@import 'components/team';
+@import 'components/card';
+@import 'components/footer';
+@import 'components/input';

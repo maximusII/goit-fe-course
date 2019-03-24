@@ -1,0 +1,7 @@
+.footer {
+  @include flex(space-between, center);
+  border-top: 1px solid $footer-color;
+  min-height: 61px;
+
+}
+

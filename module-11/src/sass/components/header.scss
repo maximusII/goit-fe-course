@@ -1,0 +1,22 @@
+.header {
+  margin-bottom: 123px;
+}
+
+.logo, 
+.header__title, 
+.header__text {
+  position: relative;
+  z-index: 1;
+  color: $primary-light-color;
+}
+
+.header__title {
+  font-size: 72px;
+}
+
+.header__text {
+  font-size: 142px;
+  max-width: 870px;
+  margin: $margin-center;
+}
+

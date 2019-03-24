@@ -1,0 +1,60 @@
+.services-card__title {
+  font-size: $primary-font-size;
+}
+
+.wrapper__services-card {
+  @include flex(space-between, space-between);
+  flex-wrap: wrap;
+  height: 247px;
+  width: 98%;
+  margin: $margin-center;
+}
+
+.services-card {
+  width: 380px;
+  padding-left: 80px;
+  position: relative;
+}
+
+.services-card::before {
+  position: absolute;
+  top: 0;
+  left: 21px;
+}
+
+.service-card__icon--photo::before {
+  content: url(../../images/ALARM-icon.png)
+}
+
+.service-card__icon--design::before {
+  content: url(../../images/LINE-GRAPH-icon.png)
+}
+
+.service-card__icon--creativity::before {
+  content: url(../../images/COMPUTER-icon.png)
+}
+
+.service-card__icon--seo::before {
+  content: url(../../images/BOOK-icon.png)
+}
+
+.service-card__icon--html::before {
+  content: url(../../images/HOME-icon.png)
+}
+
+.service-card__icon--digital::before {
+  content: url(../../images/IMAGE-icon.png)
+}
+
+.services-card__text,
+.team__description {
+  font-family: $third-font;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.services-card__title {
+  margin-bottom: 13px;
+}

@@ -1,0 +1,104 @@
+.cards {
+  @include flex(space-between, stretch);
+}
+
+.card__figure {
+  margin-bottom: 29px;
+}
+
+.card__figure, .card__img {
+  position: relative;
+}
+
+.card__figure {
+  &:hover .card__gradient {
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+  }
+}
+
+.card__figure {
+  &:hover img {
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+  }
+}
+
+.card__figure {
+  &:hover .card__gradient {
+    background-image: linear-gradient(rgba(239, 138, 138, 0.8), rgba(238, 214, 134, 0.8));
+    z-index: 2;
+  }
+}
+
+.card__figure {
+  &:hover .card__icons {
+    opacity: 1;
+  }
+}
+
+.card__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 470px;
+  background-color: $card-background;
+}
+
+.card__gradient {
+  width: 380px;
+  height: 471px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgb(239, 138, 138), rgb(238, 214, 134));
+}
+
+.card__icons {
+  @include flex(center, stretch);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-54%, -93%);
+  z-index: 3;
+  opacity: 0;
+}
+
+.card__icon {
+  width: 56px;
+  height: 56px;
+  background-color: $menu-item-color;
+  @include flex(center, center);
+}
+
+.card__icon--svg {
+  display: block;
+  width: 50%;
+  height: 50%;
+  fill: $soc-icon-color;
+}
+
+.card__icon:hover svg {
+  fill: $primary-light-color;
+}
+
+.card__icon:hover {
+  fill: $primary-light-color;
+  background-color: $soc-icon-color;
+}
+
+.card__title {
+  font-size: $primary-font-size;
+  margin-bottom: 11px;
+}
+
+.card__text {
+  font-family: $third-font;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+  margin-bottom: 82px;
+}

@@ -1,0 +1,43 @@
+.menu {
+  @include flex(space-between, stretch);
+  position: relative;
+  width: 616px;
+  padding-right: 128px;
+}
+
+.menu__item {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu__item {
+  color: $primary-light-color;
+}
+
+.menu {
+  font-size: $primary-font-size;
+}
+
+.menu__item {
+  &:hover {
+    border-bottom: 2px solid $menu-item-color;
+    color: $menu-item-color;
+  }
+}
+
+.menu::after, .menu::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+.menu::after {
+  content: url(../../images/SHOPPING-CART.png);
+  left: calc(100% - 76px);
+}
+
+.menu::before {
+  content: url(../../images/MAGNIFYING-GLASS.png);
+  left: calc(100% - 16px);
+}

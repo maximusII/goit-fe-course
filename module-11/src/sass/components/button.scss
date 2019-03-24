@@ -1,0 +1,25 @@
+.button {
+  color: $primary-light-color;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button__header {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  height: 40px;
+  margin: 66px auto 0;
+  border: 3px solid $primary-light-color;
+  background-color: $button-header-color;
+  font-size: $primary-font-size;
+}
+
+.button__footer {
+  border: none;
+  background: $card-background;
+  width: 149px;
+  height: 40px;
+  font-size: $primary-font-size;
+}

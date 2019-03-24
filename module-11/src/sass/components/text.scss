@@ -1,0 +1,37 @@
+.text__align--center {
+  text-align: center;
+}
+
+.text__transform--upper {
+  text-transform: uppercase;
+}
+
+.service__title, .team__title {
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+
+.service__text, .team__text {
+  font-size: 30px;
+}
+
+.service__text::after,
+.team__text::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 4px;
+  background: $soc-icon-color;
+}
+
+.service__text::after {
+  margin: 36px auto 63px;
+}
+
+.team__text::after {
+  margin: 36px auto 43px;
+}
+
+.footer__text{
+  font-size: $primary-font-size;
+}

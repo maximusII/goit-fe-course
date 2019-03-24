@@ -22,11 +22,11 @@ img {
 .wrapper__header {
   background-image: url(../img/Eagle.png);
   width: auto;
-  min-height: 987px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 229px;
 }
 
 .wrapper__gradient {

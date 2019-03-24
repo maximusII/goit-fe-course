@@ -1,0 +1,4 @@
+.wrapper__nav {
+  @include flex(space-between, center);
+  height: 86px;
+}
