@@ -1,5 +1,5 @@
 .wrapper__header {
-  background-image: url(../../images/Eagle.png);
+  background-image: url(../images/Eagle.png);
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
   padding-bottom: 225px;
   margin-bottom: 46px;
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../../images/Eagle@2x.png);
+    background-image: url(../images/Eagle@2x.png);
   }
 }
 

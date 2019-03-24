@@ -425,7 +425,7 @@ img {
 }
 
 .wrapper__header {
-  background-image: url(../../images/Eagle.png);
+  background-image: url(../images/Eagle.png);
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -623,27 +623,27 @@ img {
 }
 
 .service-card__icon--photo::before {
-  content: url(../../images/ALARM-icon.png);
+  content: url(../images/ALARM-icon.png);
 }
 
 .service-card__icon--design::before {
-  content: url(../../images/LINE-GRAPH-icon.png);
+  content: url(../images/LINE-GRAPH-icon.png);
 }
 
 .service-card__icon--creativity::before {
-  content: url(../../images/COMPUTER-icon.png);
+  content: url(../images/COMPUTER-icon.png);
 }
 
 .service-card__icon--seo::before {
-  content: url(../../images/BOOK-icon.png);
+  content: url(../images/BOOK-icon.png);
 }
 
 .service-card__icon--html::before {
-  content: url(../../images/HOME-icon.png);
+  content: url(../images/HOME-icon.png);
 }
 
 .service-card__icon--digital::before {
-  content: url(../../images/IMAGE-icon.png);
+  content: url(../images/IMAGE-icon.png);
 }
 
 .services-card__text,
@@ -820,6 +820,6 @@ input {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .wrapper__header {
-    background-image: url(../../images/Eagle@2x.png);
+    background-image: url(../images/Eagle@2x.png);
   }
 }
