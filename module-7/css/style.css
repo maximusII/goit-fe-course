@@ -50,7 +50,7 @@ nav a:focus {
 
 .services {
     padding-top: 112px;
-    padding-bottom: 102px;
+    padding-bottom: 118px;
     text-align: center;
 }
 
@@ -75,15 +75,17 @@ li {
 .cards {
     display: flex;
     justify-content: space-between;
+    padding-top: 88px;
 }
 
 .card {
-    width: 290px;
-    height: 232px;
+    /* width: 290px;
+    height: 232px; */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; 
-    margin-top: 38px;
+    justify-content: space-between;
+    padding: 0 20px; 
+    /* margin-top: 38px; */
 }
 
 .card img {
@@ -97,10 +99,16 @@ li {
     font-size: 18px;
 }
 
+.card-title {
+  padding-top: 16px;
+}
+
 .card-text {
     font-family: Roboto;
     font-size: 14px;
     color: grey;
+    padding-top: 10px;
+    line-height: 1.3rem;
 }
 
 .contact {
@@ -126,11 +134,17 @@ li {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 0;
 }
 
 .form p {
     padding-bottom: 76px;
 } 
+
+.allform-wrapper {
+  position: relative;
+  z-index: 1;
+}
 
 .form-wrapper {
     display: flex;
