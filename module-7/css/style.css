@@ -31,7 +31,14 @@ html {
     left: 0;
 }
 
+nav {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
 nav a {
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
@@ -39,9 +46,9 @@ nav a {
     font-size: 14px;
 }
 
-nav a:not(:last-child) {
+/* nav a:not(:last-child) {
     margin-right: 38px;
-}
+} */
 
 nav a:hover,
 nav a:focus {
@@ -88,9 +95,21 @@ li {
     /* margin-top: 38px; */
 }
 
-.card img {
+/* .card img {
     width: 72px;
     height: 72px;
+} */
+
+.card1::before {
+  content: url(../img/Laptop-icon.png);
+}
+
+.card2::before {
+  content: url(../img/Lock-icon.png);
+}
+
+.card3::before {
+  content: url(../img/Basket-icon.png);
 }
 
 .card-title, input[type="submit"] {
@@ -130,11 +149,23 @@ li {
     height: 564px;
 }
 
-.bottom img {
+/* .bottom img {
     position: absolute;
     top: 0;
     right: 0;
     z-index: 0;
+} */
+
+.bottom-image {
+  display: block;
+  position: absolute;
+  min-height: 100%;
+  width: 45%;
+  top: 0;
+  right: 0;
+  background-image: url(../img/Map-image.png);
+  background-size: cover;
+  z-index: 0;
 }
 
 .form p {
@@ -160,7 +191,7 @@ input[type="text"], input[type="email"] {
 
 input[type="submit"] {
     display: block;
-    margin: 30px auto;
+    margin: 30px auto 0;
     background-color: rgb(254, 209, 54);
     width: 240px;
     height: 68px;
